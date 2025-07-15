@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Bokor&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Battambang", system-ui;
+}
+header {
+  width: 100%;
+  height: auto;
+  background-color: #111;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.w-80 {
+  width: 80%;
+  margin: 0 auto;
+}
+header .header {
+  height: 100px;
+  padding: 15px;
+}
+header .header img {
+  height: 100%;
+}
+nav {
+  width: 100%;
+  background-color: crimson;
+  position: sticky;
+  top: 12%;
+  z-index: 5;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 10px 30px;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0.8;
+  transition: all 0.3s;
+  font-family: "Bokor", system-ui;
+}
+nav ul li:first-child a {
+  background-color: rgb(170, 11, 43);
+  color: #fff;
+  opacity: 2;
+}
+nav ul li a:hover {
+  opacity: 1;
+}
+main {
+  width: 100%;
+  height: 500px;
+}
+main .box-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .box-container .box-left {
+  width: 40%;
+  height: 50%;
+  position: relative;
+}
+main .box-container .box-middle {
+  width: 35%;
+  height: 50%;
+  position: relative;
+}
+main .box-container .box-right {
+  width: 24%;
+  height: 49%;
+  margin-left: 1%;
+  background-color: rgb(113, 15, 15);
+}
+
+main .box-container .box-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .box-container .box-left .box-absolute {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #11111155;
+  transition: all 0.3s;
+}
+main .box-container .box-left:hover .box-absolute {
+  background-color: rgba(0, 0, 0, 0.245);
+  background-image: linear-gradient(rgba(255, 255, 255, 0), black);
+}
+
+main .box-container .box-left .sub-title {
+  width: 110px;
+  position: absolute;
+  font-size: 14px;
+  top: 10px;
+  left: 0px;
+  padding-left: 10px;
+  color: #ffff;
+  background-color: #38c378;
+  font-family: "Battambang", system-ui;
+  clip-path: polygon(0 0, 78% 0, 100% 100%, 0% 100%);
+}
+main .box-container .box-left .title-content {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  padding: 20px;
+  color: #fff;
+  font-family: "Battambang", system-ui;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+main .box-container .box-left:hover .title-content {
+  top: 25%;
+  left: 0;
+  color: rgb(235, 24, 66);
+  font-weight: bold;
+}
+main .box-container .box-left span {
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  padding: 20px;
+  color: #fff;
+  font-family: "Battambang", system-ui;
+  font-size: 14px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+main .box-container .box-left:hover span {
+  top: 60%;
+  left: 0;
+  opacity: 1;
+}
+main .box-container .box-left p {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  font-family: "Bokor", system-ui;
+  padding: 20px;
+  color: #fff;
+  font-size: 13px;
+}
+
+main .box-container .box-middle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .box-container .box-middle .box-absolute {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1111115e;
+}
+main .box-container .box-middle .sub-title {
+  width: 110px;
+  position: absolute;
+  font-size: 14px;
+  top: 10px;
+  left: 0px;
+  padding-left: 10px;
+  color: #ffff;
+  background-color: pink;
+  font-family: "Battambang", system-ui;
+  clip-path: polygon(0 0, 78% 0, 100% 100%, 0% 100%);
+}
+main .box-container .box-middle .title-content {
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  padding: 20px;
+  color: #fff;
+  font-family: "Battambang", system-ui;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+main .box-container .box-middle:hover .title-content {
+  top: 10%;
+  left: 0;
+  color: rgb(235, 24, 66);
+  font-weight: bold;
+}
+main .box-container .box-middle span {
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  padding: 20px;
+  color: #fff;
+  font-family: "Battambang", system-ui;
+  font-size: 14px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+main .box-container .box-middle:hover span {
+  top: 50%;
+  left: 0;
+  opacity: 1;
+}
+main .box-container .box-middle p {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  font-family: "Bokor", system-ui;
+  padding: 20px;
+  color: #fff;
+  font-size: 13px;
+}
+main .box-container .box-middle:hover .box-absolute {
+  background-color: rgba(0, 0, 0, 0.245);
+  background-image: linear-gradient(rgba(255, 255, 255, 0), black);
+}
+main .section-2 {
+  width: 100%;
+  height: auto;
+  border: 1px solid white;
+  border-top: 3px solid red;
+  box-shadow: 1px 0px 10px rgb(206, 206, 206);
+  margin-top: 70px;
+  position: relative;
+  font-family: "Battambang", system-ui;
+}
+
+main .section-2 .sub-title {
+  position: absolute;
+  bottom: 100%;
+  clip-path: polygon(0 0, 78% 0, 100% 100%, 0% 100%);
+  background-color: crimson;
+  color: #ffff;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  padding-left: 10px;
+  font-size: 22px;
+}
+main .section-2 .box-container {
+  width: 97%;
+  margin: 10px auto;
+}
+main .section-2 .box-top {
+  width: 100%;
+  display: flex;
+  gap: 1%;
+}
+main .section-2 .box-top .box-1 {
+  width: 33%;
+  height: 100%;
+  transition: all 0.3s;
+}
+main .section-2 .box-top .box-2 {
+  width: 33%;
+  transition: all 0.3s;
+}
+main .section-2 .box-top .box-3 {
+  width: 33%;
+  height: 100%;
+  transition: all 0.3s;
+}
+main .section-2 .box-top .box-1 img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+main .section-2 .box-top .box-2 img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+main .section-2 .box-top .box-3 img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+main .section-2 .box-top .box-1:hover img {
+  transform: scale(0.98);
+}
+main .section-2 .box-top h4 {
+  color: #111111b7;
+}
+main .section-2 .box-top h4:hover {
+  color: #111111f4;
+}
+main .section-2 .box-top .box-2:hover img {
+  transform: scale(0.98);
+}
+main .section-2 .box-top .box-3:hover img {
+  transform: scale(0.98);
+}
+main .section-2 .box-bottom {
+  width: 900px;
+  height: 400px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  margin-top: 20px;
+}
+main .section-2 .box-bottom .box {
+  width: 200px;
+  height: 200px;
+  transition: all 3s;
+}
+main .section-2 .box-bottom .box img {
+  width: 100%;
+  height: 60%;
+}
+main .section-2 .box-bottom .box h5 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  color: #111111b7;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+}
+main .section-2 .box-bottom .box:hover img {
+  transform: scale(0.98);
+}
+main .section-2 .box-bottom .box h5:hover {
+  color: #111111f4;
+}
+main .container {
+  width: 100%;
+  margin-top: 70px;
+  position: relative;
+  border: 1px solid white;
+  border-top: 3px solid #fa5480;
+  box-shadow: 1px 0px 10px rgb(206, 206, 206);
+}
+main .container .komsan-path {
+  position: absolute;
+  bottom: 100%;
+  clip-path: polygon(0 0, 78% 0, 100% 100%, 0% 100%);
+  background-color: #fa5480;
+  color: #ffff;
+  width: 110px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  padding-left: 10px;
+  font-size: 22px;
+  font-family: "Battambang", system-ui;
+}
+main .komsan-content {
+  width: 97%;
+  margin: 20px auto;
+  display: flex;
+  gap: 10px;
+  
+}
+main .komsan-content .box-left {
+  width: 25%;
+  background-color:#fa5480 ;
+}
+main .komsan-content .box-left img{
+  width: 100%;
+  transition: all 0.3s;
+}
+main .komsan-content .box-left img:hover{
+  transform: scale(0.98);
+}
+main .komsan-content .box-left h3{
+  font-family: "Battambang", system-ui;
+  font-size: 22px;
+  padding: 0px 15px;
+  line-height: 35px;
+  color: #fff;
+  
+}
+
+main .komsan-content .box-right {
+  width: 75%;
+  display: flex;
+  column-gap: 20px;
+  row-gap:0px;
+  flex-wrap: wrap;
+}
+main .komsan-content .box-right .box {
+  width: 200px;
+  height: 200px;
+  transition: all 0.3s;
+ 
+}
+main .komsan-content .box-right .box img {
+  width: 100%;
+  height: 50%;
+}
+main .komsan-content .box-right .box img:hover{
+  transform: scale(0.98);
+}
+main .komsan-content .box-right .box h5{
+  color: #111111b7;
+}
+main .komsan-content .box-right .box h5:hover{
+  color: #111111f5;
+}
